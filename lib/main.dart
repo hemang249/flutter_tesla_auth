@@ -80,6 +80,9 @@ class _MyHomePageState extends State<MyHomePage> {
       String accessToken = tokenData['access_token'];
       // The refresh token that can be used within 45 days to refresh the access token. More info at https://tesla-api.timdorr.com/api-basics/authentication
       String refreshToken = tokenData['refresh_token'];
+
+      print('access token is : $accessToken');
+      print('refresh token is : $refreshToken');
     } catch (err) {
       print(err);
     }
